@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+         <!-- Cambia la siguiente línea con la ruta de tu nuevo icono -->
+    <link rel="icon" type="image/png" href="/img/logo2.png">
+
+    <title>Portafolio</title>
+    <!-- Llamo mi hoja de estilos -->
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+
+
+</head>
+
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <!--Etiqueta para crear Hipervinculos-->
+
+                <img src="/img/logo2.png" width="300px">
+
+                <!-- <a href="#logo">LEYLA VASQUEZ</a> -->
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+    <!--seccion Incio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img class="imag" src="/img/perfil.jpeg" width="50%">
+            </div>
+            <h1>Leyla Vasquez</h1>
+
+            <h2>Ingeniero en Ciencias de la Computación-Desarrolladora FullStack</h2>
+            <div class="redes">
+                <a href="http://www.linkedin.com/in/leylagiselavasquezenamorado-developer" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/legive" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://www.youtube.com/@tutosbylegive" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <h2>Sobre mí</h2>
+        <div class="contenido-seccion">
+
+            <p><span>Hola, soy Leyla Vasquez</span>
+                Ingeniero en Ciencias de la Computación con más de una década de experiencia en el apasionante mundo
+                de la tecnología. Mi rol como Ingeniero de Sistemas me ha brindado la oportunidad de crear soluciones
+                desde cero, incluyendo el desarrollo de software de administración y control de equipos, gestión de
+                clientes, seguimiento de gastos y registros de pagos. Mi pasión por la tecnología y mi compromiso con la
+                innovación me impulsan a continuar creciendo y adaptándome a las últimas tendencias tecnológicas en el
+                mundo del desarrollo de software y las telecomunicaciones.</p>
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <Strong>Cumpleaños</Strong>
+                            01/09/1988
+
+                        </li>
+                        <li>
+                            <Strong>Teléfono</Strong>
+                            +504 94733639
+
+                        </li>
+                        <li>
+                            <Strong>Email</Strong>
+                            leylagisela@gmail.com
+
+                        </li>
+                        <li>
+                            <Strong>Website</Strong>
+                            www.legive-dev.com
+
+                        </li>
+                        <li>
+                            <Strong>Dirección</Strong>
+                            Honduras CA
+
+                        </li>
+                    </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                            <span>COCINA</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>JARDINERÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button>
+                <a href="https://drive.google.com/file/d/1AUesF9SDmHN6_pe6X1MZJwiIt791FgqW/view?usp=sharing" target="_blank">Descargar CV Español<i class="fa-solid fa-circle-down"></i></a>
+
+                
+                <span class="overlay"></span>
+            </button>
+            <button>
+                <a href="https://drive.google.com/file/d/1MK10em4s7o9TjJkYC0Ty_hsT4sBpaJpR/view?usp=sharing" target="_blank">Descargar CV Ingles<i class="fa-solid fa-circle-down"></i></a>
+
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Technical Skills-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+
+                    <div class="skill">
+                        <span>HTML-CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FullStack MERN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Visual basic.Net</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>ASP.Net y ADO.Net Entity Framework</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL y MariaDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--Professional Skills-->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+
+                    <div class="skill">
+                        <span>Puntualidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Paciencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsable</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación al cambio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+    </section>
+    <!--Curriculum-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollador Fullstack MERN</h4>
+                        <span class="casa">Ada School</span>
+                        <span class="fecha">2023</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniero en Ciencias de la Computación</h4>
+                        <span class="casa">Universidad Católica de Honduras</span>
+                        <span class="fecha">2010</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Ingeniero de Informática</h4>
+                        <span class="casa">INTERRA S de RL (ISP)</span>
+                        <span class="fecha">2012-2023</span>
+                        <p>
+                        <ul>
+                            <li>Desarrollo y mantenimiento de un software innovador destinado al control administrativo
+                                y el soporte técnico de los clientes, transformando radicalmente los procesos de cobros
+                                y atención al cliente, dicho software desarrollado en Visual Basic.Net y MariDB.
+
+                        </ul>
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="item der">
+                        <h4>Catedrática (tiempo parcial)</h4>
+                        <span class="casa">Universidad Cristiana Nuevo Milenio UCENM</span>
+                        <span class="fecha">2012-2016</span>
+                        <p>
+
+                            Se impartieron cursos relacionados con la ingeniería de sistemas, que incluían programación,
+                            diseño de software, gestión de proyectos y redes.
+                        </p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Ingeniero de sistemas y soporte técnico (tiempo parcial)</h4>
+                        <span class="casa">Empresa Nacional de energía eléctrica ENEE</span>
+                        <span class="fecha">2012-2014</span>
+                        <p>
+                            Desarrollo de dos softwares uno para el control y la administración del mantenimiento
+                            preventivo y predictivo de equipos ayudando a eficientar las tareas semanales realizadas por
+                            las áreas de mantenimiento civil, eléctrico y mecánico y el otro para control de consultas
+                            médicas e inventario de medicamentos en el dispensario médico de las centrales
+                            hidroeléctricas de la ENEE.
+                        </p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--Seccion Portafolio-->
+
+
+
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+
+
+
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p4.png" alt="">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Con esta herramienta, podrás intercambiar mensajes secretos con otras personas que conozcan el secreto de nuestra encriptación.</p>
+                        <h4>Desarrollada con Html, CSS y Javascript</h4>
+                        <a href="https://legive.github.io/Challenge-Oracle-ONE/" target="_blank">
+                            Ver Aplicación
+                        </a>
+                        <a href="https://github.com/legive/Challenge-Oracle-ONE.git" target="_blank">
+                            Repositorio github
+                        </a>
+                    </div>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.png" alt="">
+                    <div class="overlay">
+                        <h3>Recipe page solution</h3>
+                        <p>This is a solution to the Recipe page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.</p>
+                        <h4>Desarrollada con Html y CSS</h4>
+                        <a href="https://legive.github.io/recipe-page-main/" target="_blank">
+                            Ver Aplicación
+                        </a>
+                        <a href="https://github.com/legive/recipe-page-main.git" target="_blank">
+                            Repositorio github
+                        </a>
+                    </div>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>TaskList</h3>
+                        <p>Organiza tu día fue desarrollada con la finalidad de simplificar tu vida y ayudarte a ser más
+                            productivo.</p>
+                        <h4>Desarrollada con React.Js y Chakra UI</h4>
+                        <a href="http://www.legive-dev.com/tasklist/" target="_blank">
+                            Ver Aplicación
+                        </a>
+                        <a href="https://github.com/legive/my-react-task-list.git" target="_blank">
+                            Repositorio github
+                        </a>
+                    </div>
+
+                </div>
+                
+
+                <div class="proyecto">
+                    <div class="gallery">
+                        <img src="img/p2.png" alt="">
+                        <div class="overlay">
+                            <h3>SAINTERRA</h3>
+                            <p>Control y administración de clientes, pagos, quejas, fallas y equipos</p>
+                            <h4>Desarrollada con VB.Net y MariaDB</h4>
+                            <a href="img/p2.png" data-lightbox="models" data-title="Imagen1">
+                                Ver Galeria
+                            </a>
+                            <a href="img/p2.1.png" data-lightbox="models" data-title="Nuevos Clientes">
+
+                            </a>
+                            <a href="img/p2.2.png" data-lightbox="models" data-title="Instalación">
+
+                            </a>
+                            <a href="img/p2.3.png" data-lightbox="models" data-title="Pagos">
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="proyecto" id="proyecto1">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>MECEP Software</h3>
+                        <p>Control y administración del mantenimiento preventivo de equipos</p>
+                        <h4>Desarrollada con VB.Net y MariaDB</h4>
+                        <a href="#" id="playButton1">Ver Video</a>
+                    </div>
+
+                </div>
+                <div id="videoContainer1">
+
+                </div>
+                <button id="volverButton1">Volver</button>
+
+
+
+            </div>
+    </section>
+
+    <!--Seccion Contacto-->
+    <section class="contacto" id="contacto">
+        <!--Seccion Contacto-->
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <form action="mailto:leylagisela@gamil.com" method="post" enctype="text/plain">
+
+            <div class="fila">
+                <div class="col">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tú Nombre">
+                    <input type="text" id="numero" name="numero" required placeholder="Número Telefónico">
+                    <input type="text" id="email" name="email" required  placeholder="Dirección de Correo">
+                    <input type="text" id="tema" name="tema" required placeholder="Tema">
+                    <textarea id="mensaje" cols="30" rows="10"  name="mensaje" required placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Honduras C.A
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                +504 94733639
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                leylagisela@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="http://www.linkedin.com/in/leylagiselavasquezenamorado-developer" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/legive" target="_blank"><i class="fa-brands fa-github" ></i></a>
+            <a href="https://www.youtube.com/@tutosbylegive" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
